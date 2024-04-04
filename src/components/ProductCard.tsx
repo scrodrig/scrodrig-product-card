@@ -1,6 +1,6 @@
 import styles from '../styles/styles.module.css';
 import { useProduct } from '../hooks/useProduct';
-import { CSSProperties, ReactElement, createContext } from 'react';
+import React, { CSSProperties, ReactElement, createContext } from 'react';
 import {
   InitalValues,
   Product,
