@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductTitle should show the component right with custom title 1`] = `
+<div
+  className="productCard undefined"
+>
+  <span
+    className="productDescription undefined"
+  >
+    Coffee mug card (no img)
+  </span>
+</div>
+`;
+
+exports[`ProductTitle should show the component right with the snapshot 1`] = `
+<span
+  className="productDescription custom-class"
+>
+  Custom product
+</span>
+`;
