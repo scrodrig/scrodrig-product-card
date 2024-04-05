@@ -27,3 +27,22 @@ import { ProductCard } from 'scrodrig-product-card';
   )}
 </ProductCard>
 ```
+
+```tsx
+<ProductCard
+  style={{ width: '100px' }}
+  product={product}
+  className="bg-dark text-white"
+  onChange={()=>{}}
+  value={product.count}
+>
+  <ProductCard.Image
+    className="custom-image"
+    style={{ boxShadow: '10px 10px 10px rgba(0,0,0,0.2)' }}
+  />
+  <ProductCard.Buttons
+    className="custom-buttons"
+    style={{ display: 'flex', justifyContent: 'center' }}
+  />
+</ProductCard>
+```
