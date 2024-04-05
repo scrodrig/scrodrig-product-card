@@ -14,7 +14,10 @@ const { Provider } = ProductContext;
 
 export interface Props {
   product: Product;
-  children?: ReactElement | ReactElement[] | ((args: ProductCardHandlers) => JSX.Element);
+  children?:
+    | ReactElement
+    | ReactElement[]
+    | ((args: ProductCardHandlers) => JSX.Element);
   className?: string;
   style?: CSSProperties;
   onChange?: (args: onChangeArgs) => void;
@@ -31,7 +34,13 @@ export const ProductCard = ({
   value,
   initialValues,
 }: Props) => {
-  const { counter, increaseBy, maxCount, isMaxCountReached, reset } = useProduct({
+  const {
+    counter,
+    increaseBy,
+    maxCount,
+    isMaxCountReached,
+    reset,
+  } = useProduct({
     onChange,
     product,
     value,
@@ -45,7 +54,8 @@ export const ProductCard = ({
         increaseBy,
         maxCount,
         product,
-      }}>
+      }}
+    >
       <div className={`${styles.productCard} ${className}`} style={style}>
         {children && typeof children === 'function'
           ? children({

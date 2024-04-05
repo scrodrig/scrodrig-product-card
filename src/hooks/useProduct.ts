@@ -6,7 +6,7 @@ type useProductType = {
   increaseBy: (value: number) => void;
   maxCount: number | undefined;
   isMaxCountReached: boolean;
-  reset: ()=>void;
+  reset: () => void;
 };
 
 interface useProductArgs {
@@ -52,7 +52,8 @@ export const useProduct = ({
     counter,
     increaseBy,
     maxCount: initialValues?.maxCount,
-    isMaxCountReached: !!initialValues?.count && initialValues.maxCount === counter,
+    isMaxCountReached:
+      !!initialValues?.count && initialValues.maxCount === counter,
     reset,
   };
 };
