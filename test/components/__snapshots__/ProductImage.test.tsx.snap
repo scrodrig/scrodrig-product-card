@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductImage should show the component right with image 1`] = `
+<div
+  className="productCard undefined"
+>
+  <img
+    alt="coffe mug"
+    className="productImg undefined"
+    src="./coffee-mug.png"
+  />
+</div>
+`;
+
+exports[`ProductImage should show the component right with no image 1`] = `
+<div
+  className="productCard undefined"
+>
+  <img
+    alt="coffe mug"
+    className="productImg undefined"
+    src="https://hola.jpg"
+  />
+</div>
+`;
+
+exports[`ProductImage should show the component right with the snapshot 1`] = `
+<img
+  alt="coffe mug"
+  className="productImg custom-class"
+  src="https://hola.jpg"
+/>
+`;
